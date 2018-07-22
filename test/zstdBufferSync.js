@@ -31,8 +31,8 @@ describe('ZSTD Buffer Sync', function() {
       testBufferSync(zstd.compressSync, 'data.txt', 'data.txt.zst.09', {level: 9});
     });
 
-    it('should compress text data with dict=(new Buffer("hello zstd"))', function() {
-      testBufferSync(zstd.compressSync, 'data.txt', 'data.txt.zst.09.dict', {level: 9, dict: new Buffer("hello zstd")});
+    it('should compress text data with dict=(Buffer.from("hello zstd"))', function() {
+      testBufferSync(zstd.compressSync, 'data.txt', 'data.txt.zst.09.dict', {level: 9, dict: Buffer.from("hello zstd")});
     });
 
     it('should compress an empty buffer', function() {
@@ -54,8 +54,8 @@ describe('ZSTD Buffer Sync', function() {
       testBufferSync(zstd.decompressSync, 'data.txt.zst', 'data.txt');
     });
 
-    it('should decompress text data with dict=(new Buffer("hello zstd"))', function() {
-      testBufferSync(zstd.decompressSync, 'data.txt.zst.09.dict', 'data.txt', {level: 9, dict: new Buffer("hello zstd")});
+    it('should decompress text data with dict=(Buffer.from("hello zstd"))', function() {
+      testBufferSync(zstd.decompressSync, 'data.txt.zst.09.dict', 'data.txt', {level: 9, dict: Buffer.from("hello zstd")});
     });
 
     it('should decompress to an empty buffer', function() {
