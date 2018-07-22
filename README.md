@@ -1,12 +1,14 @@
-node-zstd [![version](https://img.shields.io/npm/v/node-zstd.svg)](https://www.npmjs.com/package/node-zstd) [![ZSTD/v1.0.0](https://img.shields.io/badge/ZSTD-v1.0.0-green.svg)](https://github.com/facebook/zstd/releases/tag/v1.0.0)
+node-zstd [![version](https://img.shields.io/npm/v/node-zstd.svg)](https://www.npmjs.com/package/node-zstd) [![ZSTD/v1.3.5](https://img.shields.io/badge/ZSTD-v1.3.5-green.svg)](https://github.com/facebook/zstd/releases/tag/v1.3.5)
 =====
 
 [![Build Status][1]][2]
 
-[1]: https://travis-ci.org/zwb-ict/node-zstd.svg?branch=master
-[2]: https://travis-ci.org/zwb-ict/node-zstd
+[1]: https://travis-ci.org/albe/node-zstd.svg?branch=master
+[2]: https://travis-ci.org/albe/node-zstd
 
 Zstd wrapper for Nodejs
+
+This is a fork of RobinChao/node-zstd which fixes compilation for Windows and updates dependencies.
 
 ## Installation
 
